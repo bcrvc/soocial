@@ -3,9 +3,9 @@ import MySQLdb
 
 # connects to database 
 mydb = MySQLdb.connect(host='igor.gold.ac.uk',
-    user='******',
-    passwd='******',
-    db='******')
+    user='*******',
+    passwd='*******',
+    db='*******')
 cursor = mydb.cursor()
 
 # queries the database for a column 
@@ -14,7 +14,7 @@ cursor.execute(getdata)
 results = cursor.fetchall()
 
 # writes into an empty csv file
-csv_data = open('bithash.csv','w')
+csv_data = open('<yourcsv','w')
 
 # loops tweets in a column and saves them into a csv file 
 for i in results: 
