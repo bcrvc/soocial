@@ -2,7 +2,7 @@ import re
 import MySQLdb
 
 # connects to database 
-mydb = MySQLdb.connect(host='igor.gold.ac.uk',
+mydb = MySQLdb.connect(host='*********',
     user='*******',
     passwd='*******',
     db='*******')
@@ -14,7 +14,7 @@ cursor.execute(getdata)
 results = cursor.fetchall()
 
 # writes into an empty csv file
-csv_data = open('<yourcsv','w')
+csv_data = open('<yourcsv>','w')
 
 # loops tweets in a column and saves them into a csv file 
 for i in results: 
