@@ -3,9 +3,9 @@ import MySQLdb
 
 #establish connection to the database
 mydb = MySQLdb.connect(host='igor.gold.ac.uk',
-    user='<username>',
-    passwd='<pass>',
-    db='<database_name')
+    user='*********',
+    passwd='*********',
+    db='*********')
 cursor = mydb.cursor()
 
 # read csv file
