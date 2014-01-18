@@ -3,9 +3,9 @@ import MySQLdb
 
 # connects to database 
 mydb = MySQLdb.connect(host='igor.gold.ac.uk',
-    user='so301hc',
-    passwd='Sveske77',
-    db='so301hc_twittcoin')
+    user='******',
+    passwd='******',
+    db='******')
 cursor = mydb.cursor()
 
 # queries the database for a column 
