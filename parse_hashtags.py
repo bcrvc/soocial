@@ -20,6 +20,8 @@ csv_data = open('<yourcsv>','w')
 for i in results: 
 	for j in re.findall(r"\#\w+", i[0]):
 		csv_data.write(j+' ')
+		# or activate next line to extract hashtags without "#" and save into a text file (data formated for wordcloud)
+		# csv_data.write(j.strip('#')+' ')
 	csv_data.write('\n')
 csv_data.close()
 
